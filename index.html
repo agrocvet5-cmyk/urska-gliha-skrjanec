@@ -306,7 +306,14 @@ function toggleLang() {
   var texts = t[lang];
   for (var id in texts) {
     var el = document.getElementById(id);
-    if (el) el.textContent = texts[id];
+    if (!el) continue;
+    if (id === 'hero-h1') {
+      el.innerHTML = texts[id] + '<br><span id="hero-h1-span" style="color:var(--teal)">' + texts['hero-h1-span'] + '</span>';
+    } else if (id === 'hero-h1-span') {
+      continue;
+    } else {
+      el.textContent = texts[id];
+    }
   }
 }
 </script>
