@@ -9,15 +9,11 @@
   <meta name="author" content="Urška Gliha Škrjanec" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.gliha-prevajanje.si/" />
-
-  <!-- Open Graph (za deljenje na družbenih omrežjih) -->
   <meta property="og:title" content="mag. Urška Gliha Škrjanec – Sodna tolmačka in prevajalka za angleščino" />
   <meta property="og:description" content="Sodna tolmačka za angleški jezik z več kot 15 leti izkušenj. Specializirana za pravne, poslovne in strokovne prevode ter tolmačenje." />
   <meta property="og:url" content="https://www.gliha-prevajanje.si/" />
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="sl_SI" />
-
-  <!-- Schema.org strukturirani podatki za Google -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -52,9 +48,7 @@
       font-weight: 700;
       font-style: normal;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     :root {
       --teal: #00968F;
       --teal-light: #E0F4F3;
@@ -69,7 +63,6 @@
       --radius-md: 8px;
       --radius-lg: 12px;
     }
-
     @media (prefers-color-scheme: dark) {
       :root {
         --teal: #2BBDB6;
@@ -84,204 +77,55 @@
         --border-mid: rgba(255,255,255,0.18);
       }
     }
-
-    body {
-      font-family: 'FiraSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-      background: var(--bg-primary);
-      color: var(--text-primary);
-      font-size: 16px;
-      line-height: 1.7;
-    }
-
+    body { font-family: 'FiraSans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: var(--bg-primary); color: var(--text-primary); font-size: 16px; line-height: 1.7; }
     a { color: var(--teal); text-decoration: none; }
     a:hover { text-decoration: underline; }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.1rem 2rem;
-      border-bottom: 0.5px solid var(--border);
-      background: var(--bg-primary);
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-    .nav-logo {
-      font-size: 14px;
-      font-weight: 700;
-      letter-spacing: 0.01em;
-      color: var(--text-primary);
-    }
+    nav { display: flex; justify-content: space-between; align-items: center; padding: 1.1rem 2rem; border-bottom: 0.5px solid var(--border); background: var(--bg-primary); position: sticky; top: 0; z-index: 100; }
+    .nav-logo { font-size: 14px; font-weight: 700; color: var(--text-primary); }
     .nav-logo span { color: var(--teal); }
-    .nav-links {
-      display: flex;
-      gap: 1.5rem;
-      list-style: none;
-    }
-    .nav-links a {
-      font-size: 13px;
-      color: var(--text-secondary);
-      text-decoration: none;
-    }
+    .nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; }
+    .nav-links a { font-size: 13px; color: var(--text-secondary); text-decoration: none; }
     .nav-links a:hover { color: var(--teal); }
-
-    .container {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 0 2rem;
-    }
-
+    .lang-btn { font-family: inherit; font-size: 13px; font-weight: 700; padding: 4px 12px; border-radius: 20px; border: 1.5px solid var(--teal); background: transparent; color: var(--teal); cursor: pointer; }
+    .lang-btn:hover { background: var(--teal-light); }
+    .container { max-width: 780px; margin: 0 auto; padding: 0 2rem; }
     .divider { height: 0.5px; background: var(--border); }
-
     .hero { padding: 4rem 0 3rem; }
-    .hero-tag {
-      display: inline-block;
-      font-size: 12px;
-      font-weight: 700;
-      color: var(--teal);
-      background: var(--teal-light);
-      padding: 4px 14px;
-      border-radius: 20px;
-      margin-bottom: 1.2rem;
-    }
-    .hero h1 {
-      font-size: 38px;
-      font-weight: 700;
-      line-height: 1.15;
-      margin-bottom: 1rem;
-    }
+    .hero-tag { display: inline-block; font-size: 12px; font-weight: 700; color: var(--teal); background: var(--teal-light); padding: 4px 14px; border-radius: 20px; margin-bottom: 1.2rem; }
+    .hero h1 { font-size: 38px; font-weight: 700; line-height: 1.15; margin-bottom: 1rem; }
     .hero h1 span { color: var(--teal); }
-    .hero p {
-      font-size: 16px;
-      color: var(--text-secondary);
-      max-width: 560px;
-      margin-bottom: 1.5rem;
-    }
-    .hero-badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-bottom: 2rem;
-    }
-    .badge {
-      font-size: 12px;
-      padding: 4px 12px;
-      border-radius: 20px;
-      border: 0.5px solid var(--border-mid);
-      color: var(--text-secondary);
-    }
+    .hero p { font-size: 16px; color: var(--text-secondary); max-width: 560px; margin-bottom: 1.5rem; }
+    .hero-badges { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 2rem; }
+    .badge { font-size: 12px; padding: 4px 12px; border-radius: 20px; border: 0.5px solid var(--border-mid); color: var(--text-secondary); }
     .cta-row { display: flex; gap: 12px; flex-wrap: wrap; }
-    .btn-primary {
-      font-family: 'FiraSans', sans-serif;
-      font-size: 14px;
-      font-weight: 700;
-      padding: 10px 22px;
-      background: var(--teal);
-      color: #ffffff;
-      border: none;
-      border-radius: var(--radius-md);
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
+    .btn-primary { font-family: 'FiraSans', sans-serif; font-size: 14px; font-weight: 700; padding: 10px 22px; background: var(--teal); color: #ffffff; border: none; border-radius: var(--radius-md); cursor: pointer; text-decoration: none; display: inline-block; }
     .btn-primary:hover { background: var(--teal-dark); text-decoration: none; }
-    .btn-secondary {
-      font-family: 'FiraSans', sans-serif;
-      font-size: 14px;
-      padding: 10px 22px;
-      background: transparent;
-      color: var(--teal);
-      border: 1.5px solid var(--teal);
-      border-radius: var(--radius-md);
-      cursor: pointer;
-      text-decoration: none;
-      display: inline-block;
-    }
+    .btn-secondary { font-family: 'FiraSans', sans-serif; font-size: 14px; padding: 10px 22px; background: transparent; color: var(--teal); border: 1.5px solid var(--teal); border-radius: var(--radius-md); cursor: pointer; text-decoration: none; display: inline-block; }
     .btn-secondary:hover { background: var(--teal-light); text-decoration: none; }
-
     .section { padding: 3rem 0; }
-    .section-label {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.10em;
-      color: var(--teal);
-      font-weight: 700;
-      margin-bottom: 1.5rem;
-    }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 12px;
-    }
-    .service-card {
-      background: var(--bg-secondary);
-      border-radius: var(--radius-lg);
-      padding: 1.25rem;
-      border-left: 3px solid var(--teal);
-    }
+    .section-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.10em; color: var(--teal); font-weight: 700; margin-bottom: 1.5rem; }
+    .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    .service-card { background: var(--bg-secondary); border-radius: var(--radius-lg); padding: 1.25rem; border-left: 3px solid var(--teal); }
     .service-icon { font-size: 20px; margin-bottom: 0.75rem; }
     .service-card h3 { font-size: 15px; font-weight: 700; margin-bottom: 0.4rem; }
     .service-card p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 2.5rem;
-      align-items: start;
-    }
-    .about-text p {
-      font-size: 15px;
-      color: var(--text-secondary);
-      line-height: 1.75;
-      margin-bottom: 1rem;
-    }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2.5rem; align-items: start; }
+    .about-text p { font-size: 15px; color: var(--text-secondary); line-height: 1.75; margin-bottom: 1rem; }
     .creds { display: flex; flex-direction: column; gap: 10px; }
-    .cred-item {
-      background: var(--bg-secondary);
-      border-radius: var(--radius-md);
-      padding: 0.9rem 1rem;
-    }
+    .cred-item { background: var(--bg-secondary); border-radius: var(--radius-md); padding: 0.9rem 1rem; }
     .cred-item .year { font-size: 11px; color: var(--teal); font-weight: 700; margin-bottom: 3px; }
     .cred-item .cred-title { font-size: 13px; font-weight: 700; }
-
     .pubs-list { display: flex; flex-direction: column; gap: 10px; }
-    .pub-item {
-      padding: 0.9rem 1rem;
-      border-left: 3px solid var(--teal);
-      background: var(--bg-secondary);
-      border-radius: 0 var(--radius-md) var(--radius-md) 0;
-    }
+    .pub-item { padding: 0.9rem 1rem; border-left: 3px solid var(--teal); background: var(--bg-secondary); border-radius: 0 var(--radius-md) var(--radius-md) 0; }
     .pub-item .pub-title { font-size: 13px; font-weight: 700; margin-bottom: 3px; }
     .pub-item .pub-meta { font-size: 12px; color: var(--text-tertiary); }
-
-    .contact-card {
-      background: var(--bg-secondary);
-      border-radius: var(--radius-lg);
-      padding: 1.75rem;
-    }
-    .contact-row {
-      display: flex;
-      align-items: baseline;
-      gap: 12px;
-      padding: 0.7rem 0;
-      border-bottom: 0.5px solid var(--border);
-    }
+    .contact-card { background: var(--bg-secondary); border-radius: var(--radius-lg); padding: 1.75rem; }
+    .contact-row { display: flex; align-items: baseline; gap: 12px; padding: 0.7rem 0; border-bottom: 0.5px solid var(--border); }
     .contact-row:last-child { border-bottom: none; }
     .contact-label { font-size: 12px; color: var(--text-tertiary); min-width: 100px; flex-shrink: 0; }
     .contact-value { font-size: 14px; }
-
-    footer {
-      margin-top: 3rem;
-      padding: 2rem;
-      border-top: 0.5px solid var(--border);
-      text-align: center;
-      font-size: 12px;
-      color: var(--text-tertiary);
-    }
+    footer { margin-top: 3rem; padding: 2rem; border-top: 0.5px solid var(--border); text-align: center; font-size: 12px; color: var(--text-tertiary); }
     footer span { color: var(--teal); font-weight: 700; }
-
     @media (max-width: 620px) {
       nav { padding: 1rem 1.25rem; }
       .container { padding: 0 1.25rem; }
@@ -296,54 +140,55 @@
 <nav>
   <div class="nav-logo">gliha <span>urška</span> škrjanec</div>
   <ul class="nav-links">
-    <li><a href="#storitve">Storitve</a></li>
-    <li><a href="#omeni">O meni</a></li>
-    <li><a href="#kontakt">Kontakt</a></li>
+    <li><a href="#storitve" id="nav-services">Storitve</a></li>
+    <li><a href="#omeni" id="nav-about">O meni</a></li>
+    <li><a href="#kontakt" id="nav-contact">Kontakt</a></li>
+    <li><button class="lang-btn" onclick="toggleLang()" id="lang-btn">EN</button></li>
   </ul>
 </nav>
 
 <div class="container">
 
   <section class="hero">
-    <div class="hero-tag">Prevajanje &amp; tolmačenje</div>
-    <h1>Pravno znanje.<br><span>Jezikovne veščine.</span></h1>
-    <p>Sodna tolmačka za angleški jezik z več kot 15 leti izkušenj. Specializirana za pravne, poslovne in strokovne prevode ter tolmačenje.</p>
+    <div class="hero-tag" id="hero-tag">Prevajanje &amp; tolmačenje</div>
+    <h1 id="hero-h1">Pravno znanje.<br><span id="hero-h1-span">Jezikovne veščine.</span></h1>
+    <p id="hero-p">Sodna tolmačka za angleški jezik z več kot 15 leti izkušenj. Specializirana za pravne, poslovne in strokovne prevode ter tolmačenje.</p>
     <div class="hero-badges">
       <span class="badge">Angleščina ↔ Slovenščina</span>
-      <span class="badge">Sodni tolmač od 2009</span>
+      <span class="badge" id="badge-court">Sodni tolmač od 2009</span>
       <span class="badge">Cambridge ILEC 2008</span>
-      <span class="badge">Magistra pravnih znanosti</span>
+      <span class="badge" id="badge-mag">Magistra pravnih znanosti</span>
     </div>
     <div class="cta-row">
-      <a href="#kontakt" class="btn-primary">Pišite mi</a>
-      <a href="#storitve" class="btn-secondary">Oglejte si storitve</a>
+      <a href="#kontakt" class="btn-primary" id="btn-contact">Pišite mi</a>
+      <a href="#storitve" class="btn-secondary" id="btn-services">Oglejte si storitve</a>
     </div>
   </section>
 
   <div class="divider"></div>
 
   <section class="section" id="storitve">
-    <div class="section-label">Storitve</div>
+    <div class="section-label" id="label-services">Storitve</div>
     <div class="services-grid">
       <div class="service-card">
         <div class="service-icon">⚖️</div>
-        <h3>Pravno prevajanje</h3>
-        <p>Prevodi pogodb, sodnih dokumentov, aktov in druge pravne dokumentacije med slovenščino in angleščino.</p>
+        <h3 id="s1-title">Pravno prevajanje</h3>
+        <p id="s1-desc">Prevodi pogodb, sodnih dokumentov, aktov in druge pravne dokumentacije med slovenščino in angleščino.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">🎙️</div>
-        <h3>Sodno tolmačenje</h3>
-        <p>Imenovan sodni tolmač za angleški jezik. Tolmačenje na sodiščih, notarjih in uradnih postopkih.</p>
+        <h3 id="s2-title">Sodno tolmačenje</h3>
+        <p id="s2-desc">Imenovan sodni tolmač za angleški jezik. Tolmačenje na sodiščih, notarjih in uradnih postopkih.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">📄</div>
-        <h3>Poslovni prevodi</h3>
-        <p>Prevodi poslovne korespondence, pogodb, poročil in splošnih poslovnih dokumentov.</p>
+        <h3 id="s3-title">Poslovni prevodi</h3>
+        <p id="s3-desc">Prevodi poslovne korespondence, pogodb, poročil in splošnih poslovnih dokumentov.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">🎓</div>
-        <h3>Strokovni prevodi</h3>
-        <p>Prevodi akademskih del, strokovnih člankov in specializiranih besedil s področja prava in gospodarstva.</p>
+        <h3 id="s4-title">Strokovni prevodi</h3>
+        <p id="s4-desc">Prevodi akademskih del, strokovnih člankov in specializiranih besedil s področja prava in gospodarstva.</p>
       </div>
     </div>
   </section>
@@ -351,30 +196,18 @@
   <div class="divider"></div>
 
   <section class="section" id="omeni">
-    <div class="section-label">O meni</div>
+    <div class="section-label" id="label-about">O meni</div>
     <div class="about-grid">
       <div class="about-text">
-        <p>Sem Urška Gliha Škrjanec, magistra pravnih znanosti in univerzitetna diplomirana pravnica z dolgoletnimi izkušnjami na področju prevajanja in tolmačenja.</p>
-        <p>Za sodnega tolmača za angleški jezik sem bila imenovana leta 2009. Svojo strokovno usposobljenost sem potrdila z opravljenim izpitom International Legal English Certificate (ILEC) pri Univerzi v Cambridgeu.</p>
-        <p>Kot avtorica strokovnih člankov s področja delovnega prava aktivno sledim razvoju pravne stroke in zagotavljam prevode na najvišji strokovni ravni.</p>
+        <p id="about-p1">Sem Urška Gliha Škrjanec, magistra pravnih znanosti in univerzitetna diplomirana pravnica z dolgoletnimi izkušnjami na področju prevajanja in tolmačenja.</p>
+        <p id="about-p2">Za sodnega tolmača za angleški jezik sem bila imenovana leta 2009. Svojo strokovno usposobljenost sem potrdila z opravljenim izpitom International Legal English Certificate (ILEC) pri Univerzi v Cambridgeu.</p>
+        <p id="about-p3">Kot avtorica strokovnih člankov s področja delovnega prava aktivno sledim razvoju pravne stroke in zagotavljam prevode na najvišji strokovni ravni.</p>
       </div>
       <div class="creds">
-        <div class="cred-item">
-          <div class="year">2016</div>
-          <div class="cred-title">Magistra pravnih znanosti — magistrska naloga s področja delovnega prava</div>
-        </div>
-        <div class="cred-item">
-          <div class="year">2009</div>
-          <div class="cred-title">Imenovanje za sodno tolmačko — angleški jezik</div>
-        </div>
-        <div class="cred-item">
-          <div class="year">2008</div>
-          <div class="cred-title">Cambridge ILEC — International Legal English Certificate</div>
-        </div>
-        <div class="cred-item">
-          <div class="year">2004</div>
-          <div class="cred-title">Univ. dipl. prav. — diplomska naloga s področja bančnega zavarovalništva</div>
-        </div>
+        <div class="cred-item"><div class="year">2016</div><div class="cred-title" id="cred1">Magistra pravnih znanosti — magistrska naloga s področja delovnega prava</div></div>
+        <div class="cred-item"><div class="year">2009</div><div class="cred-title" id="cred2">Imenovanje za sodno tolmačko — angleški jezik</div></div>
+        <div class="cred-item"><div class="year">2008</div><div class="cred-title" id="cred3">Cambridge ILEC — International Legal English Certificate</div></div>
+        <div class="cred-item"><div class="year">2004</div><div class="cred-title" id="cred4">Univ. dipl. prav. — diplomska naloga s področja bančnega zavarovalništva</div></div>
       </div>
     </div>
   </section>
@@ -382,76 +215,101 @@
   <div class="divider"></div>
 
   <section class="section" id="publikacije">
-    <div class="section-label">Izbrane publikacije</div>
+    <div class="section-label" id="label-pubs">Izbrane publikacije</div>
     <div class="pubs-list">
-      <div class="pub-item">
-        <div class="pub-title">Vpliv zmanjšane delavčeve zmožnosti za delo na delovno razmerje</div>
-        <div class="pub-meta">Podjetje in delo, 2017 · str. 367–397</div>
-      </div>
-      <div class="pub-item">
-        <div class="pub-title">Delavec v delitveni ekonomiji — opravljanje dela ali storitev?</div>
-        <div class="pub-meta">Pravna praksa, 2017</div>
-      </div>
-      <div class="pub-item">
-        <div class="pub-title">Ali se v javnem sektorju zlorablja institut pogodb o zaposlitvi za določen čas?</div>
-        <div class="pub-meta">Pravna praksa, 2015</div>
-      </div>
-      <div class="pub-item">
-        <div class="pub-title">Ure, ki jih delavec s skrajšanim delovnim časom opravi nad pogodbeno dogovorjenim delovnim časom</div>
-        <div class="pub-meta">Pravna praksa, 2015</div>
-      </div>
-      <div class="pub-item">
-        <div class="pub-title">Merila in višina odškodnine po 118. členu ZDR v primeru športnega delavca</div>
-        <div class="pub-meta">Pravna praksa, 2012</div>
-      </div>
-      <div class="pub-item">
-        <div class="pub-title">Varstvo delavk, ki dojijo</div>
-        <div class="pub-meta">Pravna praksa, 2010</div>
-      </div>
+      <div class="pub-item"><div class="pub-title">Vpliv zmanjšane delavčeve zmožnosti za delo na delovno razmerje</div><div class="pub-meta">Podjetje in delo, 2017 · str. 367–397</div></div>
+      <div class="pub-item"><div class="pub-title">Delavec v delitveni ekonomiji — opravljanje dela ali storitev?</div><div class="pub-meta">Pravna praksa, 2017</div></div>
+      <div class="pub-item"><div class="pub-title">Ali se v javnem sektorju zlorablja institut pogodb o zaposlitvi za določen čas?</div><div class="pub-meta">Pravna praksa, 2015</div></div>
+      <div class="pub-item"><div class="pub-title">Ure, ki jih delavec s skrajšanim delovnim časom opravi nad pogodbeno dogovorjenim delovnim časom</div><div class="pub-meta">Pravna praksa, 2015</div></div>
+      <div class="pub-item"><div class="pub-title">Merila in višina odškodnine po 118. členu ZDR v primeru športnega delavca</div><div class="pub-meta">Pravna praksa, 2012</div></div>
+      <div class="pub-item"><div class="pub-title">Varstvo delavk, ki dojijo</div><div class="pub-meta">Pravna praksa, 2010</div></div>
     </div>
   </section>
 
   <div class="divider"></div>
 
   <section class="section" id="kontakt">
-    <div class="section-label">Kontakt</div>
+    <div class="section-label" id="label-contact">Kontakt</div>
     <div class="contact-card">
-      <div class="contact-row">
-        <span class="contact-label">Ime in priimek</span>
-        <span class="contact-value">mag. Urška Gliha Škrjanec, univ. dipl. prav.</span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Dejavnost</span>
-        <span class="contact-value">Prevajanje in tolmačenje</span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Naslov</span>
-        <span class="contact-value">Jerova vas 31, 1290 Grosuplje</span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Telefon</span>
-        <span class="contact-value"><a href="tel:041976740">(041) 976 740</a></span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">E-pošta</span>
-        <span class="contact-value"><a href="mailto:agrocvet5@gmail.com">agrocvet5@gmail.com</a></span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Matična št.</span>
-        <span class="contact-value">8346950000</span>
-      </div>
-      <div class="contact-row">
-        <span class="contact-label">Davčna št.</span>
-        <span class="contact-value">SI 23303808</span>
-      </div>
+      <div class="contact-row"><span class="contact-label" id="cl1">Ime in priimek</span><span class="contact-value">mag. Urška Gliha Škrjanec, univ. dipl. prav.</span></div>
+      <div class="contact-row"><span class="contact-label" id="cl2">Dejavnost</span><span class="contact-value" id="cv2">Prevajanje in tolmačenje</span></div>
+      <div class="contact-row"><span class="contact-label" id="cl3">Naslov</span><span class="contact-value">Jerova vas 31, 1290 Grosuplje</span></div>
+      <div class="contact-row"><span class="contact-label" id="cl4">Telefon</span><span class="contact-value"><a href="tel:041976740">(041) 976 740</a></span></div>
+      <div class="contact-row"><span class="contact-label" id="cl5">E-pošta</span><span class="contact-value"><a href="mailto:agrocvet5@gmail.com">agrocvet5@gmail.com</a></span></div>
+      <div class="contact-row"><span class="contact-label" id="cl6">Matična št.</span><span class="contact-value">8346950000</span></div>
+      <div class="contact-row"><span class="contact-label" id="cl7">Davčna št.</span><span class="contact-value">SI 23303808</span></div>
     </div>
   </section>
 
 </div>
 
-<footer>
+<footer id="footer-text">
   © 2025 <span>gliha urška škrjanec</span> s.p. &nbsp;·&nbsp; Prevajanje in tolmačenje &nbsp;·&nbsp; Jerova vas 31, 1290 Grosuplje
 </footer>
+
+<script>
+var lang = 'sl';
+var t = {
+  sl: {
+    'nav-services': 'Storitve', 'nav-about': 'O meni', 'nav-contact': 'Kontakt',
+    'hero-tag': 'Prevajanje & tolmačenje',
+    'hero-h1': 'Pravno znanje.',
+    'hero-h1-span': 'Jezikovne veščine.',
+    'hero-p': 'Sodna tolmačka za angleški jezik z več kot 15 leti izkušenj. Specializirana za pravne, poslovne in strokovne prevode ter tolmačenje.',
+    'badge-court': 'Sodni tolmač od 2009', 'badge-mag': 'Magistra pravnih znanosti',
+    'btn-contact': 'Pišite mi', 'btn-services': 'Oglejte si storitve',
+    'label-services': 'Storitve', 'label-about': 'O meni', 'label-contact': 'Kontakt', 'label-pubs': 'Izbrane publikacije',
+    's1-title': 'Pravno prevajanje', 's1-desc': 'Prevodi pogodb, sodnih dokumentov, aktov in druge pravne dokumentacije med slovenščino in angleščino.',
+    's2-title': 'Sodno tolmačenje', 's2-desc': 'Imenovan sodni tolmač za angleški jezik. Tolmačenje na sodiščih, notarjih in uradnih postopkih.',
+    's3-title': 'Poslovni prevodi', 's3-desc': 'Prevodi poslovne korespondence, pogodb, poročil in splošnih poslovnih dokumentov.',
+    's4-title': 'Strokovni prevodi', 's4-desc': 'Prevodi akademskih del, strokovnih člankov in specializiranih besedil s področja prava in gospodarstva.',
+    'about-p1': 'Sem Urška Gliha Škrjanec, magistra pravnih znanosti in univerzitetna diplomirana pravnica z dolgoletnimi izkušnjami na področju prevajanja in tolmačenja.',
+    'about-p2': 'Za sodnega tolmača za angleški jezik sem bila imenovana leta 2009. Svojo strokovno usposobljenost sem potrdila z opravljenim izpitom International Legal English Certificate (ILEC) pri Univerzi v Cambridgeu.',
+    'about-p3': 'Kot avtorica strokovnih člankov s področja delovnega prava aktivno sledim razvoju pravne stroke in zagotavljam prevode na najvišji strokovni ravni.',
+    'cred1': 'Magistra pravnih znanosti — magistrska naloga s področja delovnega prava',
+    'cred2': 'Imenovanje za sodno tolmačko — angleški jezik',
+    'cred3': 'Cambridge ILEC — International Legal English Certificate',
+    'cred4': 'Univ. dipl. prav. — diplomska naloga s področja bančnega zavarovalništva',
+    'cl1': 'Ime in priimek', 'cl2': 'Dejavnost', 'cl3': 'Naslov', 'cl4': 'Telefon', 'cl5': 'E-pošta', 'cl6': 'Matična št.', 'cl7': 'Davčna št.',
+    'cv2': 'Prevajanje in tolmačenje'
+  },
+  en: {
+    'nav-services': 'Services', 'nav-about': 'About', 'nav-contact': 'Contact',
+    'hero-tag': 'Translation & Interpreting',
+    'hero-h1': 'Legal expertise.',
+    'hero-h1-span': 'Language skills.',
+    'hero-p': 'Court-certified interpreter for English with over 15 years of experience. Specialised in legal, business and professional translation and interpreting.',
+    'badge-court': 'Court interpreter since 2009', 'badge-mag': 'Master of Legal Sciences',
+    'btn-contact': 'Contact me', 'btn-services': 'View services',
+    'label-services': 'Services', 'label-about': 'About me', 'label-contact': 'Contact', 'label-pubs': 'Selected publications',
+    's1-title': 'Legal translation', 's1-desc': 'Translation of contracts, court documents, acts and other legal documentation between Slovenian and English.',
+    's2-title': 'Court interpreting', 's2-desc': 'Court-certified interpreter for the English language. Interpreting at courts, notaries and official proceedings.',
+    's3-title': 'Business translation', 's3-desc': 'Translation of business correspondence, contracts, reports and general business documents.',
+    's4-title': 'Specialised translation', 's4-desc': 'Translation of academic works, professional articles and specialised texts in the field of law and economics.',
+    'about-p1': 'I am Urška Gliha Škrjanec, Master of Legal Sciences and university-qualified lawyer with many years of experience in translation and interpreting.',
+    'about-p2': 'I was appointed as a court interpreter for the English language in 2009. I confirmed my professional competence by passing the International Legal English Certificate (ILEC) examination at the University of Cambridge.',
+    'about-p3': 'As an author of professional articles in the field of labour law, I actively follow the development of the legal profession and provide translations at the highest professional level.',
+    'cred1': 'Master of Legal Sciences — thesis in labour law',
+    'cred2': 'Appointment as court interpreter — English language',
+    'cred3': 'Cambridge ILEC — International Legal English Certificate',
+    'cred4': 'Univ. dipl. prav. — thesis in banking and insurance law',
+    'cl1': 'Name', 'cl2': 'Activity', 'cl3': 'Address', 'cl4': 'Phone', 'cl5': 'E-mail', 'cl6': 'Company ID', 'cl7': 'VAT ID',
+    'cv2': 'Translation and interpreting'
+  }
+};
+
+function toggleLang() {
+  lang = lang === 'sl' ? 'en' : 'sl';
+  var btn = document.getElementById('lang-btn');
+  btn.textContent = lang === 'sl' ? 'EN' : 'SL';
+  document.documentElement.lang = lang;
+  var texts = t[lang];
+  for (var id in texts) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = texts[id];
+  }
+}
+</script>
 
 </body>
 </html>
