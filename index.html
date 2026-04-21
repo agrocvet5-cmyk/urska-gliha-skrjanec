@@ -143,7 +143,7 @@
     <li><a href="#storitve" id="nav-services">Storitve</a></li>
     <li><a href="#omeni" id="nav-about">O meni</a></li>
     <li><a href="#kontakt" id="nav-contact">Kontakt</a></li>
-    <li><button class="lang-btn" onclick="toggleLang()" id="lang-btn">English</button></li>
+    <li><button class="lang-btn" onclick="toggleLang()" id="lang-btn">EN</button></li>
   </ul>
 </nav>
 
@@ -154,7 +154,7 @@
     <h1 id="hero-h1">Pravno znanje.<br><span id="hero-h1-span">Jezikovne veščine.</span></h1>
     <p id="hero-p">Sodna tolmačka za angleški jezik z več kot 15 leti izkušenj. Specializirana za pravne, poslovne in strokovne prevode ter tolmačenje.</p>
     <div class="hero-badges">
-      <span class="badge">Angleščina ↔ Slovenščina</span>
+      <span class="badge">English ↔ Slovenian</span>
       <span class="badge" id="badge-court">Sodni tolmač od 2009</span>
       <span class="badge">Cambridge ILEC 2008</span>
       <span class="badge" id="badge-mag">Magistra pravnih znanosti</span>
@@ -301,7 +301,7 @@ var t = {
 function toggleLang() {
   lang = lang === 'sl' ? 'en' : 'sl';
   var btn = document.getElementById('lang-btn');
-  btn.textContent = lang === 'sl' ? 'English' : 'Slovenian';
+  btn.textContent = lang === 'sl' ? 'EN' : 'SL';
   document.documentElement.lang = lang;
   var texts = t[lang];
   for (var id in texts) {
